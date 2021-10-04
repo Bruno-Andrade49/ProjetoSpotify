@@ -9,64 +9,66 @@
     <body>
 
         <h1>Logo</h1>
-
+ 
         <main>
 
-            <aside>
+            <!-- Menu de navegação-->
+            <aside class="sideBarFlowfie">
                 <!-- Logo -->
-                <img src=".\Documentos\FotoProjetoFlowfie\flow-logo-A858E50F1C-seeklogo.com.png" alt="Logo">
+                <img src="C:/Users/beman/VsCodeProjects/ProjetosGit/ProjetoSpotfy/src/img/logo00.png" alt="Logo">
             
                 <!-- Menu -->
-                <nav>   
+                <nav class="menuDeNavegacao">   
                     <!-- Itens de Lista -->
                     <ul>
+                        <li>
                         <a href="https://www.linkedin.com/in/bruno-andrade-386b331b6/"></a>
-                        <img src="" slt="Home"> Home </ul>
-
-                    </ul>
-                    <ul>
+                        <img src="C:/Users/beman/VsCodeProjects/ProjetosGit/ProjetoSpotfy/src/img/icone1.png" slt="Home"> Home<img>
+                        </li>
+                    
+                        <li>
                         <a href="https://www.linkedin.com/in/bruno-andrade-386b331b6/"></a>
-                        <img src="" slt="Home"> Browser</img>
-
-                    </ul>
-                    <ul>
+                        <img src="C:/Users/beman/VsCodeProjects/ProjetosGit/ProjetoSpotfy/src/img/icone2.png" slt="Home"> Browser </img>
+                        </li>
+                    
+                        <li>
                         <a href="https://www.linkedin.com/in/bruno-andrade-386b331b6/"> </a>
-                        <img src="" slt="Home"> Musicas Favoritas </img>
-
+                        <img src="C:/Users/beman/VsCodeProjects/ProjetosGit/ProjetoSpotfy/src/img/icone3.png" slt="Home"> Musicas Favoritas </img>
+                        </li>
                     </ul>
                 </nav>
 
             </aside>
 
             <!-- Seção de Lista de musicas -->
-            <section>
+            <section class="SecaoMusicas">
                 <!-- Cabeçalho da seção de musica-->
-                <header> 
-                    <div>
-                        <img src="" alt="Usuário">
+                <header class="Cabeçalho"> 
+                    <div class="Perfil">
+                        <img src="C:/Users/beman/VsCodeProjects/ProjetosGit/ProjetoSpotfy/src/img/user.png" alt="Usuário">
                         <h2>Bruno Andrade</h2>
                     </div>
 
-                    <div>
+                    <div class="qtdMusicas">
                         <p> 10 Músicas </p>
                     </div>
                 </header>
 
                  <!-- Lista de musicas-->
 
-            <div>
+            <div class="areListaMusicas">
                 <!-- Botão de pause -->
-                <button> Pause </button>
+                <button class="btnPause"> Pause </button>
                 
                 <!-- Cabeçalho das musicas-->
-                <div>
+                <div class="descricaoMusicas">
                     <p> TITLE</p>
                     <p> ARTISTA </p>
                     <p> ALBUM</p>
                 </div>
 
                 <!-- Listas de musicas -->
-                <ul>
+                <ul class="ListadeMusicasDaDescricao">
                     <li>
                         <!-- Músicas -->
                         <p> 0 Infinita Highways</p>
@@ -97,11 +99,12 @@
 
             </section>
 
-            <section>
+            <!-- Player de musica -->
+            <section class="playerDeMusica">
 
-                <div>
-                    <figure>
-                        <img src="" alt="Album">
+                <div class="musicaTocando">
+                    <figure class="imagemDosAlbuns">
+                        <img src="C:/Users/beman/VsCodeProjects/ProjetosGit/ProjetoSpotfy/src/img/capaDisco.jpg" alt="Album">
                         <figcaption> Legendas </figcaption>
                     </figure>
 
@@ -110,14 +113,14 @@
 
                 </div>
 
-                <div>
-                    <button> Voltar </button>
-                    <button> Play/Pause </button>
-                    <button> Avançar </button>
+                <div class="controladorMusicas">
+                    <button id="voltarButton"> Voltar </button>
+                    <button id="pausarplayButton"> Play/Pause </button>
+                    <button id="avancarMusica"> Avançar </button>
 
                 </div>
 
-                <div>
+                <div class="volumeMusicas">
                     <input type="range" value="1" step="0.1">
                 </div>
 
