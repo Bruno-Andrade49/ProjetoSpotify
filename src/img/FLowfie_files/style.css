@@ -1,0 +1,93 @@
+
+/* Estilos gerais */
+Body, main, div, section, a, ul, li, img, figure, p, header, nav, h2 {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+}
+
+
+
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background: linear-gradient(0deg, #3c7981, #121212), #F1F1F1;
+    color : #F1F1F1;
+
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sideBarFlowfie{ 
+    width:15%; 
+    padding: 20px; 
+    margin-bottom: 20px;
+}
+.sideBarFlowfie > img {
+    width: 100px;
+    height: 100px;;
+
+}
+
+.menuDeNavegacao{}
+
+.linksProgama{}
+.linksProgama > li {}
+.linksProgama > li > a{}
+.linksProgama > li > a > img{}
+
+.SecaoMusicas{
+    width:80%;
+}
+.Cabeçalho{}
+
+
+.Perfil{}
+.user > img{}
+.user > h2{}
+
+
+.qtdMusicas{}
+.qtdMusicas > p{}
+
+.areListaMusicas{}
+.btnPause{}
+
+.descricaoMusicas{}
+.descricaoMusicas >  p{}
+
+.ListadeMusicasDaDescricao{}
+.ListadeMusicasDaDescricao > li{}
+.ListadeMusicasDaDescricao > li > p{}
+
+.playerDeMusica{
+    width:100%;
+}
+
+.musicaTocando{
+}
+
+.imagemDosAlbuns{}
+.imagemDosAlbuns > img{
+    height:100px;
+    width:100px;
+}
+.imagemDosAlbuns > figcaption{}
+
+.musicaTocando > h2{}
+.musicaTocando > p{}
+
+
+.controladorMusicas{}
+.controladorMusicas > button{}
+
+
+#voltarButton{}
+#pausarplayButton{}
+#avancarMusica{}
+
+.volumeMusicas{}
