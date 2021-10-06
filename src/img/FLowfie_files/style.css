@@ -14,7 +14,7 @@ Body, main, div, section, a, ul, li, img, figure, p, header, nav, h2 {
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    background: linear-gradient(0deg, #3c7981, #121212), #F1F1F1;
+    background: linear-gradient(20deg, #121212, #121212), #F1F1F1;
     color : #F1F1F1;
 
 }
@@ -23,46 +23,121 @@ main {
     flex-wrap: wrap;
 }
 .sideBarFlowfie{ 
-    width:15%; 
+    height: 400px;
+    width: 235px;
+    
+}
+.sideBarFlowfie > nav{
+    margin: 0;
+    width:10%; 
     padding: 20px; 
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .sideBarFlowfie > img {
-    width: 100px;
-    height: 100px;;
+    width: 235px;
+    height: 235px;
 
 }
 
 .menuDeNavegacao{}
 
-.linksProgama{}
-.linksProgama > li {}
-.linksProgama > li > a{}
-.linksProgama > li > a > img{}
+.linksProgama{
+    color: #F1F1F1;
+    width: 180px;
+    align-items: center;
+}
+.linksProgama > li {
+    margin-bottom: 10px;
+}
+.linksProgama > li > a{
+    color: #F1F1F1;
+    display: flex;
+}
+.linksProgama > li > img{
+    width: 30px;
+    margin-right: 20px;
+
+}
 
 .SecaoMusicas{
-    width:80%;
+    width:700px;
+    height: 500px;
 }
-.Cabeçalho{}
+.Cabeçalho{
+    background-image : url(C:/Users/beman/VsCodeProjects/ProjetosGit/ProjetoSpotfy/src/img/cabeçalho.jpg);
+    background: linear-gradient(250deg, #2596aa, #121212), #F1F1F1;
+    width: 1140px;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    position: relative;
+    padding: 20px 80px;
+}
 
 
-.Perfil{}
-.user > img{}
-.user > h2{}
+.Perfil{
+    display: flex;
+    align-items: center;
+    float: right;
 
 
-.qtdMusicas{}
-.qtdMusicas > p{}
+}
+.user > img{
+    max-width: 20px;
+}
+.user > h2{
+    font-weight: lighter;
+}
 
-.areListaMusicas{}
-.btnPause{}
 
-.descricaoMusicas{}
-.descricaoMusicas >  p{}
+.qtdMusicas{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 20px 80px;
+}
+.qtdMusicas > p{
+    font-size: 30px;
+    font-weight: 300px;
+}
+
+.areListaMusicas{
+    padding: 20px 80px;
+    background: rgba(38, 52, 73, 0.993);
+    width: 1140px;;
+    height: 300px;
+}
+.btnPause{
+    background-color: rgb(49, 158, 177);
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin-bottom: 30px;
+}
+
+.descricaoMusicas{
+    display: flex;
+}
+.descricaoMusicas > .primeiroIten{
+    width: 60%; 
+}
+.descricaoMusicas > p{
+    width: 25%;
+}
 
 .ListadeMusicasDaDescricao{}
-.ListadeMusicasDaDescricao > li{}
-.ListadeMusicasDaDescricao > li > p{}
+.ListadeMusicasDaDescricao > li{
+    display: flex;
+}
+.ListadeMusicasDaDescricao > li > .primeiroIten{
+    width: 60%;
+}
+.ListadeMusicasDaDescricao > li > p{
+    width: 25%;
+}
 
 .playerDeMusica{
     width:100%;

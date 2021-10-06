@@ -21,10 +21,12 @@ body {
 main {
     display: flex;
     flex-wrap: wrap;
+    height: 100vh;
 }
 .sideBarFlowfie{ 
     height: 400px;
     width: 235px;
+    height: calc(100% - 130px);
     
 }
 .sideBarFlowfie > nav{
@@ -65,8 +67,8 @@ main {
 }
 .Cabeçalho{
     background-image : url(C:/Users/beman/VsCodeProjects/ProjetosGit/ProjetoSpotfy/src/img/cabeçalho.jpg);
-    background: linear-gradient(250deg, #52b12c, #121212), #F1F1F1;
-    width: 1140px;
+    background: linear-gradient(250deg, #2596aa, #121212), #F1F1F1;
+    width: 1450px;
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -104,12 +106,12 @@ main {
 
 .areListaMusicas{
     padding: 20px 80px;
-    background: rgba(15, 29, 17, 0.993);
-    width: 1140px;;
-    height: 300px;
+    background: rgba(31, 44, 49, 0.993);
+    width: 1450px;;
+    height: 500px;
 }
 .btnPause{
-    background-color: rgb(59, 160, 81);
+    background-color: rgb(49, 158, 177);
     color: white;
     border: none;
     text-transform: uppercase;
@@ -120,6 +122,8 @@ main {
 
 .descricaoMusicas{
     display: flex;
+    border-bottom: 1.5px solid white;
+    padding: 8px 56px;
 }
 .descricaoMusicas > .primeiroIten{
     width: 60%; 
@@ -128,8 +132,14 @@ main {
     width: 25%;
 }
 
-.ListadeMusicasDaDescricao{}
+.ListadeMusicasDaDescricao{
+    height: 340px;
+    overflow-y: scroll;
+
+}
 .ListadeMusicasDaDescricao > li{
+    border-bottom: 0.5px solid white;
+    padding: 8px 56px;
     display: flex;
 }
 .ListadeMusicasDaDescricao > li > .primeiroIten{
@@ -141,28 +151,75 @@ main {
 
 .playerDeMusica{
     width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+    padding-right: 80px;
+    height: 100px;
+
 }
 
 .musicaTocando{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .imagemDosAlbuns{}
 .imagemDosAlbuns > img{
-    height:100px;
-    width:100px;
+    height:85px;
+    width: 85px;
+    margin-top: 5px;
 }
-.imagemDosAlbuns > figcaption{}
+.imagemDosAlbuns > figcaption{
+    display: none;
+}
 
-.musicaTocando > h2{}
-.musicaTocando > p{}
+.infoAlbum{
+    margin-right: 20px;
+}
+.infoAlbum > h2{
+    margin-bottom: 8px;
+    font-size: 128%;
+    margin-left: 1%;
+}
+.infoAlbum > p{
+    font-size: 90%;
+    margin-left: 2%;
+}
 
 
 .controladorMusicas{}
-.controladorMusicas > button{}
+.controladorMusicas > button{
+    width: 31px;
+    height: 31px;
+    background: transparent;
+    border: none;
+    background-position: center;
+    background-size: 23px;
+    background-repeat: no-repeat;
+}
+
+#voltarButton{
+    background-image: url("C:/Users/beman/VsCodeProjects/ProjetosGit/ProjetoSpotfy/src/img/previous.png");
+    background-size: cover;
+}
+#pausarplayButton{
+    background-image: url("C:/Users/beman/VsCodeProjects/ProjetosGit/ProjetoSpotfy/src/img/play.png");
+    background-size: 40px;
+    margin: 0 20px;
 
 
-#voltarButton{}
-#pausarplayButton{}
-#avancarMusica{}
+}
+#avancarMusica{
+    background-image: url("C:/Users/beman/VsCodeProjects/ProjetosGit/ProjetoSpotfy/src/img/next.png");
+    background-size: cover;
+}
 
-.volumeMusicas{}
+.volumeMusicas{
+    background-image: url("C:/Users/beman/VsCodeProjects/ProjetosGit/ProjetoSpotfy/src/img/volume.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding-left: 30px; 
+}
