@@ -66,7 +66,7 @@ main {
     height: 500px;
 }
 .Cabeçalho{
-    background-image : url(C:/Users/beman/VsCodeProjects/ProjetosGit/ProjetoSpotfy/src/img/cabeçalho.jpg);
+    background-image : url('img/cabeçalho.jpg');
     background: linear-gradient(250deg, #2596aa, #121212), #F1F1F1;
     width: 1450px;
     background-size: cover; 
@@ -202,23 +202,26 @@ main {
 }
 
 #voltarButton{
-    background-image: url("C:/Users/beman/VsCodeProjects/ProjetosGit/ProjetoSpotfy/src/img/previous.png");
+    background-image: url(../img/previous.png);
     background-size: cover;
 }
 #pausarplayButton{
-    background-image: url("C:/Users/beman/VsCodeProjects/ProjetosGit/ProjetoSpotfy/src/img/play.png");
+    background-image: url(../img/play.png);
     background-size: 40px;
     margin: 0 20px;
-
-
+}
+#pausarplayButton.pause{
+    background-image: url(../img/pause.png);
+    background-size: 40px;
+    margin: 0 20px;
 }
 #avancarMusica{
-    background-image: url("C:/Users/beman/VsCodeProjects/ProjetosGit/ProjetoSpotfy/src/img/next.png");
+    background-image: url(../img/next.png);
     background-size: cover;
 }
 
 .volumeMusicas{
-    background-image: url("C:/Users/beman/VsCodeProjects/ProjetosGit/ProjetoSpotfy/src/img/volume.png");
+    background-image: url(../img/volume.png);
     background-repeat: no-repeat;
     background-size: 20px;
     padding-left: 30px; 

@@ -1,6 +1,6 @@
 const baseDeMusicas = [
     {
-    'name': '',
+    'name': 'O papa e pop',
     'artist': 'Engenheiros do Hawaii',
     'path': 'C:/Users/beman/VsCodeProjects/ProjetosGit/ProjetoSpotfy/src/audio/01-O papa e ppop.mp3',
     'album': 'Acústico Engenheiros',
